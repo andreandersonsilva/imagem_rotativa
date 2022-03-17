@@ -1,0 +1,31 @@
+body{
+    /*Determino altura da tela viewport height e o 100 indica 100%*/
+    min-height: 100vh;
+    background-color: #ccc;
+    /*Este site tem uma galeria de fotos que vai alterar a cada atualização da página e o 1500 e 800 são a resolução da tela / 1500px e 800 px*/
+    /*O "g" inserido faz com que apareçam apenas fotos em cinza e como neste formato não precisou, se inserir o random no final, ele vai alternar as imagens no fundo conforme atualizamos - 'https://unsplash.it/g/1500/800?random'*/
+    background-image: url('https://unsplash.it/1500/800');
+}
+
+/*-----------------*\
+    LOGIN
+\*-----------------*/
+
+.login-form{
+    margin-top: 50vh; /*Aqui determino que a caixa fique ocupando vertical o espaço de 50% da tela*/
+    transform: translateY(-50%); /*Apenas com a código acima, a caixa vai ficar mais embaixo, por isso usamos o tranform:translateY (-50%) que vai traduzir a posição do elemento (Caixa Login) para o tamanho que a tela*/
+
+    padding: 20px 30px;
+    background-color: rgba(0,0,0, .9);
+
+    color: white;
+}
+
+.login-form h1{
+    margin: 0 0 5px;
+}
+
+.login-form h2{
+    margin: 0 0 30px;
+    font-size: 1em;
+}
